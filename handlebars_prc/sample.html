@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-1.12.3.min.js"></script>
+	<script src="handlebars-v4.0.5.js"></script>
+	<script src="sampleJS.js"></script>
+</head>
+<body>
+	<p> The List of Shoes :
+	</p>
+	<ul class="shoesNav">
+	<!-- Sample template for Handlebars-->
+		<script id="shoe-template" type="x-handlebars-template">
+		{{#each this}}
+		<li class="shoes"><a href="/{{name}}">{{name}} -- Price: {{price}} </a></li>
+		{{/each}}
+		</script>
+	</ul>
+</body>
+</html>
