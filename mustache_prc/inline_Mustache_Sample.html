@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="mustache.js"></script>
+	<script type="text/javascript">
+		var view = {
+			name : "Joe",
+			occupation : "Web Developer"
+		}
+		function loadTemp(){
+			var output = Mustache.render("{{name}} is an {{occupation}}", view);
+			document.getElementById('person').innerHTML = output;
+		}
+	</script>
+</head>
+<body onload="loadTemp()">
+	<p id="person"></p>
+</body>
+</html>
